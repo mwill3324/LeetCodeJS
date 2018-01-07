@@ -1,0 +1,24 @@
+/**
+ * @param {string} word
+ * @return {boolean}
+ */
+var detectCapitalUse = function(word) {
+    if(word === word.toUpperCase())
+    {
+        return true;
+    }
+    if(word === word.toLowerCase())
+    {
+        return true;
+    }
+    var word2 = word.substr(0,1);
+    console.log(word2);
+    if(word2 === word2.toUpperCase())
+    {
+        if(word.substr(1,word.length) === word.substr(1,word.length).toLowerCase())
+        {
+            return true;
+        }
+    }
+    return false;
+};

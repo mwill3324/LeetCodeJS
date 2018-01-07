@@ -1,0 +1,11 @@
+/**
+ * @param {string} a
+ * @param {string} b
+ * @return {number}
+ */
+var findLUSlength = function(a, b) {
+    if(a===b) //if strings are equal, there are no unique subs
+        return -1;
+    var n = Math.max(a.length, b.length); //not equal, take longest string
+    return n;
+    };
